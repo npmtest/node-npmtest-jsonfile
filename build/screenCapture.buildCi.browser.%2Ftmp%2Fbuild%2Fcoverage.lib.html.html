@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-jsonfile/jsonfile/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-jsonfile/node_modules/jsonfile/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-jsonfile">npmtest-jsonfile (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-jsonfile/jsonfile/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-jsonfile/node_modules/jsonfile/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">13.7% <small>(10 / 73)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-jsonfile/jsonfile/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-jsonfile/node_modules/jsonfile/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -486,124 +484,124 @@
 try {
   _fs = require('graceful-fs')
 } catch (_) {
-<span class="cstat-no" title="statement not covered" >  _fs = require('fs')</span>
+<span class="cstat-no" title="statement not covered">  _fs = require('fs')</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function readFile (file, options, callback) {</span>
-<span class="cstat-no" title="statement not covered" >  if (callback == null) {</span>
-<span class="cstat-no" title="statement not covered" >    callback = options</span>
-<span class="cstat-no" title="statement not covered" >    options = {}</span>
+<span class="fstat-no" title="function not covered">function readFile (file, options, callback) {</span>
+<span class="cstat-no" title="statement not covered">  if (callback == null) {</span>
+<span class="cstat-no" title="statement not covered">    callback = options</span>
+<span class="cstat-no" title="statement not covered">    options = {}</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (typeof options === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    options = {encoding: options}</span>
+<span class="cstat-no" title="statement not covered">  if (typeof options === 'string') {</span>
+<span class="cstat-no" title="statement not covered">    options = {encoding: options}</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  options = options || {}</span>
-<span class="cstat-no" title="statement not covered" >  var fs = options.fs || _fs</span>
+<span class="cstat-no" title="statement not covered">  options = options || {}</span>
+<span class="cstat-no" title="statement not covered">  var fs = options.fs || _fs</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var shouldThrow = true</span>
+<span class="cstat-no" title="statement not covered">  var shouldThrow = true</span>
   // DO NOT USE 'passParsingErrors' THE NAME WILL CHANGE!!!, use 'throws' instead
-<span class="cstat-no" title="statement not covered" >  if ('passParsingErrors' in options) {</span>
-<span class="cstat-no" title="statement not covered" >    shouldThrow = options.passParsingErrors</span>
-  } else <span class="cstat-no" title="statement not covered" >if ('throws' in options) {</span>
-<span class="cstat-no" title="statement not covered" >    shouldThrow = options.throws</span>
+<span class="cstat-no" title="statement not covered">  if ('passParsingErrors' in options) {</span>
+<span class="cstat-no" title="statement not covered">    shouldThrow = options.passParsingErrors</span>
+  } else <span class="cstat-no" title="statement not covered">if ('throws' in options) {</span>
+<span class="cstat-no" title="statement not covered">    shouldThrow = options.throws</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  fs.readFile(file, options, <span class="fstat-no" title="function not covered" >function (err, data) {</span></span>
-<span class="cstat-no" title="statement not covered" >    if (err) <span class="cstat-no" title="statement not covered" >return callback(err)</span></span>
+<span class="cstat-no" title="statement not covered">  fs.readFile(file, options, <span class="fstat-no" title="function not covered">function (err, data) {</span></span>
+<span class="cstat-no" title="statement not covered">    if (err) <span class="cstat-no" title="statement not covered">return callback(err)</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    data = stripBom(data)</span>
+<span class="cstat-no" title="statement not covered">    data = stripBom(data)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var obj</span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >      obj = JSON.parse(data, options ? options.reviver : null)</span>
+<span class="cstat-no" title="statement not covered">    var obj</span>
+<span class="cstat-no" title="statement not covered">    try {</span>
+<span class="cstat-no" title="statement not covered">      obj = JSON.parse(data, options ? options.reviver : null)</span>
     } catch (err2) {
-<span class="cstat-no" title="statement not covered" >      if (shouldThrow) {</span>
-<span class="cstat-no" title="statement not covered" >        err2.message = file + ': ' + err2.message</span>
-<span class="cstat-no" title="statement not covered" >        return callback(err2)</span>
+<span class="cstat-no" title="statement not covered">      if (shouldThrow) {</span>
+<span class="cstat-no" title="statement not covered">        err2.message = file + ': ' + err2.message</span>
+<span class="cstat-no" title="statement not covered">        return callback(err2)</span>
       } else {
-<span class="cstat-no" title="statement not covered" >        return callback(null, null)</span>
+<span class="cstat-no" title="statement not covered">        return callback(null, null)</span>
       }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    callback(null, obj)</span>
+<span class="cstat-no" title="statement not covered">    callback(null, obj)</span>
   })
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function readFileSync (file, options) {</span>
-<span class="cstat-no" title="statement not covered" >  options = options || {}</span>
-<span class="cstat-no" title="statement not covered" >  if (typeof options === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >    options = {encoding: options}</span>
+<span class="fstat-no" title="function not covered">function readFileSync (file, options) {</span>
+<span class="cstat-no" title="statement not covered">  options = options || {}</span>
+<span class="cstat-no" title="statement not covered">  if (typeof options === 'string') {</span>
+<span class="cstat-no" title="statement not covered">    options = {encoding: options}</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var fs = options.fs || _fs</span>
+<span class="cstat-no" title="statement not covered">  var fs = options.fs || _fs</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var shouldThrow = true</span>
+<span class="cstat-no" title="statement not covered">  var shouldThrow = true</span>
   // DO NOT USE 'passParsingErrors' THE NAME WILL CHANGE!!!, use 'throws' instead
-<span class="cstat-no" title="statement not covered" >  if ('passParsingErrors' in options) {</span>
-<span class="cstat-no" title="statement not covered" >    shouldThrow = options.passParsingErrors</span>
-  } else <span class="cstat-no" title="statement not covered" >if ('throws' in options) {</span>
-<span class="cstat-no" title="statement not covered" >    shouldThrow = options.throws</span>
+<span class="cstat-no" title="statement not covered">  if ('passParsingErrors' in options) {</span>
+<span class="cstat-no" title="statement not covered">    shouldThrow = options.passParsingErrors</span>
+  } else <span class="cstat-no" title="statement not covered">if ('throws' in options) {</span>
+<span class="cstat-no" title="statement not covered">    shouldThrow = options.throws</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var content = fs.readFileSync(file, options)</span>
-<span class="cstat-no" title="statement not covered" >  content = stripBom(content)</span>
+<span class="cstat-no" title="statement not covered">  var content = fs.readFileSync(file, options)</span>
+<span class="cstat-no" title="statement not covered">  content = stripBom(content)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    return JSON.parse(content, options.reviver)</span>
+<span class="cstat-no" title="statement not covered">  try {</span>
+<span class="cstat-no" title="statement not covered">    return JSON.parse(content, options.reviver)</span>
   } catch (err) {
-<span class="cstat-no" title="statement not covered" >    if (shouldThrow) {</span>
-<span class="cstat-no" title="statement not covered" >      err.message = file + ': ' + err.message</span>
-<span class="cstat-no" title="statement not covered" >      throw err</span>
+<span class="cstat-no" title="statement not covered">    if (shouldThrow) {</span>
+<span class="cstat-no" title="statement not covered">      err.message = file + ': ' + err.message</span>
+<span class="cstat-no" title="statement not covered">      throw err</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      return null</span>
+<span class="cstat-no" title="statement not covered">      return null</span>
     }
   }
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function writeFile (file, obj, options, callback) {</span>
-<span class="cstat-no" title="statement not covered" >  if (callback == null) {</span>
-<span class="cstat-no" title="statement not covered" >    callback = options</span>
-<span class="cstat-no" title="statement not covered" >    options = {}</span>
+<span class="fstat-no" title="function not covered">function writeFile (file, obj, options, callback) {</span>
+<span class="cstat-no" title="statement not covered">  if (callback == null) {</span>
+<span class="cstat-no" title="statement not covered">    callback = options</span>
+<span class="cstat-no" title="statement not covered">    options = {}</span>
   }
-<span class="cstat-no" title="statement not covered" >  options = options || {}</span>
-<span class="cstat-no" title="statement not covered" >  var fs = options.fs || _fs</span>
+<span class="cstat-no" title="statement not covered">  options = options || {}</span>
+<span class="cstat-no" title="statement not covered">  var fs = options.fs || _fs</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var spaces = typeof options === 'object' &amp;&amp; options !== null</span>
+<span class="cstat-no" title="statement not covered">  var spaces = typeof options === 'object' &amp;&amp; options !== null</span>
     ? 'spaces' in options
     ? options.spaces : this.spaces
     : this.spaces
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var str = ''</span>
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    str = JSON.stringify(obj, options ? options.replacer : null, spaces) + '\n'</span>
+<span class="cstat-no" title="statement not covered">  var str = ''</span>
+<span class="cstat-no" title="statement not covered">  try {</span>
+<span class="cstat-no" title="statement not covered">    str = JSON.stringify(obj, options ? options.replacer : null, spaces) + '\n'</span>
   } catch (err) {
-<span class="cstat-no" title="statement not covered" >    if (callback) <span class="cstat-no" title="statement not covered" >return callback(err, null)</span></span>
+<span class="cstat-no" title="statement not covered">    if (callback) <span class="cstat-no" title="statement not covered">return callback(err, null)</span></span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  fs.writeFile(file, str, options, callback)</span>
+<span class="cstat-no" title="statement not covered">  fs.writeFile(file, str, options, callback)</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function writeFileSync (file, obj, options) {</span>
-<span class="cstat-no" title="statement not covered" >  options = options || {}</span>
-<span class="cstat-no" title="statement not covered" >  var fs = options.fs || _fs</span>
+<span class="fstat-no" title="function not covered">function writeFileSync (file, obj, options) {</span>
+<span class="cstat-no" title="statement not covered">  options = options || {}</span>
+<span class="cstat-no" title="statement not covered">  var fs = options.fs || _fs</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var spaces = typeof options === 'object' &amp;&amp; options !== null</span>
+<span class="cstat-no" title="statement not covered">  var spaces = typeof options === 'object' &amp;&amp; options !== null</span>
     ? 'spaces' in options
     ? options.spaces : this.spaces
     : this.spaces
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var str = JSON.stringify(obj, options.replacer, spaces) + '\n'</span>
+<span class="cstat-no" title="statement not covered">  var str = JSON.stringify(obj, options.replacer, spaces) + '\n'</span>
   // not sure if fs.writeFileSync returns anything, but just in case
-<span class="cstat-no" title="statement not covered" >  return fs.writeFileSync(file, str, options)</span>
+<span class="cstat-no" title="statement not covered">  return fs.writeFileSync(file, str, options)</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function stripBom (content) {</span>
+<span class="fstat-no" title="function not covered">function stripBom (content) {</span>
   // we do this because JSON.parse would convert it to a utf8 string if encoding wasn't specified
-<span class="cstat-no" title="statement not covered" >  if (Buffer.isBuffer(content)) <span class="cstat-no" title="statement not covered" >content = content.toString('utf8')</span></span>
-<span class="cstat-no" title="statement not covered" >  content = content.replace(/^\uFEFF/, '')</span>
-<span class="cstat-no" title="statement not covered" >  return content</span>
+<span class="cstat-no" title="statement not covered">  if (Buffer.isBuffer(content)) <span class="cstat-no" title="statement not covered">content = content.toString('utf8')</span></span>
+<span class="cstat-no" title="statement not covered">  content = content.replace(/^\uFEFF/, '')</span>
+<span class="cstat-no" title="statement not covered">  return content</span>
 }
 &nbsp;
 var jsonfile = {
@@ -617,10 +615,11 @@ var jsonfile = {
 module.exports = jsonfile
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 07:42:18 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sun Apr 16 2017 08:18:03 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
