@@ -1,6 +1,6 @@
 # npmtest-jsonfile
 
-#### test coverage for  [jsonfile (v2.4.0)](https://github.com/jprichardson/node-jsonfile#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-jsonfile.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jsonfile) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jsonfile.svg)](https://travis-ci.org/npmtest/node-npmtest-jsonfile)
+#### basic test coverage for  [jsonfile (v3.0.0)](https://github.com/jprichardson/node-jsonfile#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-jsonfile.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jsonfile) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jsonfile.svg)](https://travis-ci.org/npmtest/node-npmtest-jsonfile)
 
 #### Easily read/write JSON files.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-jsonfile/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-jsonfile/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-jsonfile/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-jsonfile/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-jsonfile/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-jsonfile/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-jsonfile/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-jsonfile/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-jsonfile/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-jsonfile/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-jsonfile/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-jsonfile/build/coverage.html/index.html)
 
@@ -53,10 +53,10 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "3736a2b428b87bbda0cc83b53fa3d633a35c2ae8",
-        "tarball": "https://registry.npmjs.org/jsonfile/-/jsonfile-2.4.0.tgz"
+        "shasum": "92e7c7444e5ffd5fa32e6a9ae8b85034df8347d0",
+        "tarball": "https://registry.npmjs.org/jsonfile/-/jsonfile-3.0.0.tgz"
     },
-    "gitHead": "00b3983ac4aade79c64c7a8c2ced257078625c6d",
+    "gitHead": "171315331167a8f83598be2e9aa352cfffaf8123",
     "homepage": "https://github.com/jprichardson/node-jsonfile#readme",
     "keywords": [
         "read",
@@ -71,6 +71,9 @@
     "maintainers": [
         {
             "name": "jprichardson"
+        },
+        {
+            "name": "ryanzim"
         }
     ],
     "name": "jsonfile",
@@ -86,7 +89,8 @@
         "test": "npm run lint && npm run unit",
         "unit": "mocha"
     },
-    "version": "2.4.0"
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
